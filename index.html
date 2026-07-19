@@ -3,38 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sunfest Photos</title>
+  <title>Sunfest Photography</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header">
+  <header class="site-header" data-text-section="header" data-text-label="Header">
     <div class="container header-inner">
-      <div class="brand">
+      <a class="brand" href="index.html" aria-label="Go to the home page">
         <div class="logo">
-          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="48" height="48">
-            <!-- Sun circle -->
-            <circle cx="50" cy="50" r="28" fill="none" stroke="#111" stroke-width="2.5"/>
-            <!-- Sun rays -->
-            <line x1="50" y1="12" x2="50" y2="4" stroke="#111" stroke-width="2.5" stroke-linecap="round"/>
-            <line x1="50" y1="88" x2="50" y2="96" stroke="#111" stroke-width="2.5" stroke-linecap="round"/>
-            <line x1="12" y1="50" x2="4" y2="50" stroke="#111" stroke-width="2.5" stroke-linecap="round"/>
-            <line x1="88" y1="50" x2="96" y2="50" stroke="#111" stroke-width="2.5" stroke-linecap="round"/>
-            <line x1="22" y1="22" x2="16" y2="16" stroke="#111" stroke-width="2.5" stroke-linecap="round"/>
-            <line x1="78" y1="78" x2="84" y2="84" stroke="#111" stroke-width="2.5" stroke-linecap="round"/>
-            <line x1="78" y1="22" x2="84" y2="16" stroke="#111" stroke-width="2.5" stroke-linecap="round"/>
-            <line x1="22" y1="78" x2="16" y2="84" stroke="#111" stroke-width="2.5" stroke-linecap="round"/>
-            <!-- S letter -->
-            <text x="50" y="65" font-size="48" font-weight="800" text-anchor="middle" fill="#111" font-family="inherit">S</text>
-          </svg>
+          <img src="./Photos for site/CEC11EE0-8C69-4862-8552-D9A88CEC6F9B.png" alt="Sunfest Photos logo" />
         </div>
         <div>
           <p class="eyebrow"></p>
-          <h1>Sunfest Photos</h1>
+          <h1>Sunfest Photography</h1>
         </div>
-      </div>
+      </a>
       <nav class="site-nav">
         <a href="#portfolio">Portfolio</a>
-        <a href="#services">Services</a>
+        <a href="#testimonials">Testimonials</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -42,10 +28,13 @@
   </header>
 
   <main>
-    <section class="hero">
+    <section class="hero" data-text-section="hero" data-text-label="Hero section">
       <div class="container hero-copy">
         <p class="eyebrow"></p>
-        <h2>Capturing emotion, light, and timeless stories.</h2>
+        <h2>
+          <span class="hero-title-line">Capturing emotion,</span>
+          <span class="hero-title-line hero-title-line--secondary">light, and timeless stories.</span>
+        </h2>
         <p>Wedding, portrait, and lifestyle photography for clients who want unforgettable visuals that capture the beauty of each moment.</p>
         <div class="hero-actions">
           <a class="button button-primary" href="#contact">Let's Get Started</a>
@@ -54,7 +43,7 @@
       </div>
     </section>
 
-    <section id="Meet Your Photographer" class="section about-section">
+    <section id="about" class="section about-section" data-text-section="about" data-text-label="About section">
       <div class="container about-inner">
         <div class="Meet Your Photographer-copy">
           <p class="eyebrow">About</p>
@@ -72,7 +61,7 @@
       </div>
     </section>
 
-    <section id="portfolio" class="section portfolio-section">
+    <section id="portfolio" class="section portfolio-section" data-text-section="portfolio" data-text-label="Portfolio section">
       <div class="container">
         <div class="section-header">
           <p class="eyebrow">Portfolio</p>
@@ -124,6 +113,15 @@
               <p>Fun and playful photography capturing the joy and personality of childhood moments.</p>
             </div>
           </a>
+          <a class="gallery-card" href="pet-photos.html" aria-label="View Pet Photos gallery">
+            <div class="gallery-image lifestyle">
+              <img src="./Pet photos/53A517B3-BBE2-4105-9BD0-A397EED52253_1_105_c.jpeg" alt="Pet portrait photography" />
+            </div>
+            <div class="gallery-copy">
+              <h3>Pet Photos</h3>
+              <p>Warm, playful portraits that celebrate the personality and charm of your favorite companions.</p>
+            </div>
+          </a>
           <a class="gallery-card" href="gallery.html?gallery=senior-photos" aria-label="View Senior Photos gallery">
             <div class="gallery-image lifestyle">
               <img src="./Photos for site/IMG_2060.jpeg" alt="Senior portrait photography" />
@@ -137,31 +135,43 @@
       </div>
     </section>
 
-    <section id="services" class="section services-section">
+    <section id="testimonials" class="section testimonials-section" data-text-section="testimonials" data-text-label="Testimonials section">
       <div class="container">
         <div class="section-header">
-          <p class="eyebrow">Services</p>
-          <h2>What I Offer</h2>
+          <p class="eyebrow">Testimonials</p>
+          <h2>What Clients Say</h2>
         </div>
         <div class="services-grid">
           <article class="service-card">
-            <h3>Instagram Shoots</h3>
-            <p>Artistic portraits that portray your personality and vision.</p>
+            <h3>"Nicole made us feel so comfortable!"</h3>
+            <p>She captured our wedding day beautifully and made every moment feel effortless and genuine.</p>
           </article>
           <article class="service-card">
-            <h3>Portrait Sessions</h3>
-            <p>Modern portraits for individuals, couples, creatives, and families in locations that reflect your personality.</p>
+            <h3>"The images are stunning and timeless."</h3>
+            <p>From the first session to the final gallery, everything felt thoughtful, relaxed, and polished.</p>
           </article>
           <article class="service-card">
-            <h3>Brand & Editorial</h3>
-            <p>Professional session planning, styled imagery, and visual content for businesses and personal brands.</p>
+            <h3>"We loved every second of our shoot."</h3>
+            <p>Her creative direction and warm energy made the whole experience fun and memorable.</p>
           </article>
         </div>
       </div>
     </section>
 
+    <section id="pricing" class="section pricing-preview-section" data-text-section="pricing" data-text-label="Pricing section">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Pricing</p>
+          <h2>Explore package options</h2>
+        </div>
+        <div class="pricing-preview-card">
+          <p>View our pricing guide for session options, package details, and what’s included.</p>
+          <a class="button button-primary" href="pricing.html">View pricing</a>
+        </div>
+      </div>
+    </section>
 
-    <section id="contact" class="section contact-section">
+    <section id="contact" class="section contact-section" data-text-section="contact" data-text-label="Contact section">
       <div class="container contact-inner">
         <div class="section-header">
           <p class="eyebrow">Contact</p>
@@ -185,7 +195,7 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© 2026 Sunfest Photos</p>
+      <p>© 2026 Sunfest Photography</p>
       <p></p>
     </div>
   </footer>

@@ -1,4 +1,30 @@
 document.addEventListener('DOMContentLoaded', () => {
+  const sectionElements = Array.from(document.querySelectorAll('[data-text-section]'));
+  const textStyles = {
+    header: { fontFamily: 'Inter, system-ui, sans-serif', fontSize: 24, color: '#44829d' },
+    hero: { fontFamily: 'Inter, system-ui, sans-serif', fontSize: 24, color: '#ffffff' },
+    about: { fontFamily: 'Georgia, serif', fontSize: 22, color: '#2d4a56' },
+    portfolio: { fontFamily: 'Inter, system-ui, sans-serif', fontSize: 20, color: '#2d4a56' },
+    services: { fontFamily: 'Inter, system-ui, sans-serif', fontSize: 20, color: '#2d4a56' },
+    contact: { fontFamily: 'Inter, system-ui, sans-serif', fontSize: 20, color: '#2d4a56' },
+    pricing: { fontFamily: 'Inter, system-ui, sans-serif', fontSize: 20, color: '#2d4a56' },
+  };
+
+  function applyTextStyles() {
+    sectionElements.forEach((section) => {
+      const settings = textStyles[section.dataset.textSection] || {};
+      const textElements = section.querySelectorAll('h1, h2, h3, h4, h5, h6, p, li, label, span, a');
+
+      textElements.forEach((element) => {
+        element.style.fontFamily = settings.fontFamily || '';
+        element.style.fontSize = settings.fontSize ? `${settings.fontSize}px` : '';
+        element.style.color = settings.color || '';
+      });
+    });
+  }
+
+  applyTextStyles();
+
   const links = document.querySelectorAll('a[href^="#"]');
 
   links.forEach((link) => {
@@ -13,6 +39,8 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  const petGalleryCollections = window.petGalleryConfig || {};
 
   const galleryCollections = {
     'instagram-shoots': {
@@ -132,6 +160,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { src: './Photos for site/IMG_7728.jpg', alt: 'Family session photography' },
       ],
     },
+    ...petGalleryCollections,
   };
 
   function getQueryParam(key) {

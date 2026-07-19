@@ -28,6 +28,54 @@ body {
   color: var(--text);
 }
 
+.text-style-controls {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 1000;
+  width: min(260px, calc(100% - 2rem));
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: var(--shadow);
+}
+
+.text-style-controls__title {
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: var(--text);
+}
+
+.text-style-control {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.text-style-control span {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.text-style-control select,
+.text-style-control input {
+  width: 100%;
+  padding: 0.55rem 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: 0.8rem;
+  font: inherit;
+}
+
+.text-style-controls .button {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -64,16 +112,27 @@ img {
   display: flex;
   align-items: center;
   gap: 1rem;
+  color: inherit;
+  text-decoration: none;
 }
 
 .logo {
   display: grid;
   place-items: center;
-  width: 3rem;
-  height: 3rem;
-  border-radius: 1rem;
-  background: linear-gradient(135deg, var(--accent), var(--accent-strong));
-  padding: 0.25rem;
+  width: 7rem;
+  height: 7rem;
+  border-radius: .1rem;
+  background: linear-gradient(135deg, var(--bg), var(--bg));
+  padding: 0.0rem;
+  overflow: hidden;
+}
+
+.logo img,
+.logo svg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 .eyebrow {
@@ -123,10 +182,25 @@ img {
   line-height: 1.03;
   margin: 0 0 1rem;
   color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.hero-title-line {
+  display: block;
+  font-size: clamp(3rem, 3.2vw, 2.4rem);
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.hero-title-line--secondary {
+  font-size: clamp(2.2rem, 4.3vw, 3.2rem);
+  font-weight: 600;
 }
 
 .hero p {
-  font-size: 1.05rem;
+  font-size: 1.25rem;
   color: #ffffff;
   line-height: 1.8;
   margin: 0 0 2rem;
@@ -325,6 +399,120 @@ img {
   transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
+.pricing-page .section {
+  padding: 4.5rem 0 5.5rem;
+}
+
+.pricing-accordion {
+  display: grid;
+  gap: 1rem;
+}
+
+.pricing-card {
+  border: 1px solid var(--border);
+  border-radius: 1.25rem;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.pricing-toggle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  border: 0;
+  background: transparent;
+  color: var(--text);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.pricing-label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.pricing-folder-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.pricing-folder-description {
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.pricing-arrow {
+  font-size: 1.2rem;
+  color: var(--accent);
+  transition: transform 0.2s ease;
+}
+
+.pricing-card.is-open .pricing-arrow {
+  transform: rotate(90deg);
+}
+
+.pricing-details {
+  overflow: hidden;
+  max-height: 0;
+  padding: 0 1.5rem;
+  transition: max-height 0.25s ease, padding 0.25s ease;
+}
+
+.pricing-card.is-open .pricing-details {
+  max-height: 220px;
+  padding: 0 1.5rem 1.5rem;
+}
+
+.pricing-details p,
+.pricing-details ul {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.pricing-details p {
+  margin-bottom: 0.75rem;
+}
+
+.pricing-details ul {
+  padding-left: 1.1rem;
+}
+
+.pricing-info-section {
+  padding-top: 0;
+}
+
+.pricing-info-card {
+  background: linear-gradient(135deg, rgba(126, 189, 149, 0.08), rgba(94, 164, 191, 0.08));
+  border: 1px solid var(--border);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  box-shadow: var(--shadow);
+}
+
+.pricing-info-card h2 {
+  margin: 0 0 1rem;
+  font-size: clamp(1.6rem, 2.3vw, 2.2rem);
+}
+
+.pricing-info-card p,
+.pricing-info-card li {
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.pricing-info-card ul {
+  margin: 1rem 0 0;
+  padding-left: 1.1rem;
+}
+
 @media (max-width: 900px) {
   .carousel-track {
     gap: 1rem;
@@ -338,6 +526,18 @@ img {
 
   .carousel-slide {
     flex: 0 0 90%;
+  }
+
+  .pricing-toggle {
+    padding: 1.1rem 1.15rem;
+  }
+
+  .pricing-folder-description {
+    font-size: 0.9rem;
+  }
+
+  .pricing-info-card {
+    padding: 1.5rem;
   }
 }
 
