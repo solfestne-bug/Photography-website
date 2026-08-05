@@ -158,6 +158,29 @@
       </div>
     </section>
 
+    <section id="credentials" class="section credentials-section" data-text-section="credentials" data-text-label="Credentials section">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Credentials</p>
+          <h2>Featured Awards & Recognition</h2>
+        </div>
+        <div class="services-grid">
+          <article class="service-card">
+            <h3>Best Wedding Photographer 2024</h3>
+            <p>Recognized by the local bridal association for outstanding wedding photography and client experience.</p>
+          </article>
+          <article class="service-card">
+            <h3>Top Portrait Studio</h3>
+            <p>Awarded for excellence in portrait, senior, and lifestyle photography by industry judges.</p>
+          </article>
+          <article class="service-card">
+            <h3>Featured in Sunfest Creative</h3>
+            <p>Selected for publication in a premier photography showcase highlighting top visual storytellers.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section id="pricing" class="section pricing-preview-section" data-text-section="pricing" data-text-label="Pricing section">
       <div class="container">
         <div class="section-header">
@@ -177,7 +200,7 @@
           <p class="eyebrow">Contact</p>
           <h2>Let's create your next collection</h2>
         </div>
-        <form class="contact-form" id="contactForm">
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/xjgnpdww" method="POST">
           <label for="name">Name</label>
           <input id="name" name="name" type="text" placeholder="Your name" required />
 
@@ -206,20 +229,36 @@
       const form = document.getElementById('contactForm');
       if (!form) return;
 
-      form.addEventListener('submit', function (event) {
+      form.addEventListener('submit', async function (event) {
         event.preventDefault();
 
-        const name = document.getElementById('name').value.trim();
-        const email = document.getElementById('email').value.trim();
-        const message = document.getElementById('message').value.trim();
+        const submitButton = form.querySelector('button[type="submit"]');
+        const originalText = submitButton.textContent;
+        submitButton.textContent = 'Sending...';
+        submitButton.disabled = true;
 
-        const subject = encodeURIComponent(`Website contact from ${name || 'a visitor'}`);
-        const body = encodeURIComponent(
-          `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
-        );
+        try {
+          const response = await fetch(form.action, {
+            method: form.method,
+            headers: { Accept: 'application/json' },
+            body: new FormData(form)
+          });
 
-        window.location.href = `mailto:sunfestphotography@gmail.com?subject=${subject}&body=${body}`;
-        form.reset();
+          if (response.ok) {
+            form.reset();
+            submitButton.textContent = 'Message sent!';
+          } else {
+            throw new Error('Unable to send message right now.');
+          }
+        } catch (error) {
+          submitButton.textContent = 'Try again';
+          alert('Sorry, your message could not be sent. Please try again later.');
+        } finally {
+          setTimeout(function () {
+            submitButton.textContent = originalText;
+            submitButton.disabled = false;
+          }, 2500);
+        }
       });
     });
   </script>
