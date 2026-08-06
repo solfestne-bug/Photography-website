@@ -1,0 +1,380 @@
+2026-08-05 21:52:20.409 [info] [main] Log level: Info
+2026-08-05 21:52:20.433 [info] [main] Validating found git in: "/usr/bin/git"
+2026-08-05 21:52:20.495 [info] [main] Using git "2.50.1 (Apple Git-155)" from "/usr/bin/git"
+2026-08-05 21:52:20.495 [info] [Model][doInitialScan] Initial repository scan started
+2026-08-05 21:52:20.517 [info] > git rev-parse --show-toplevel [19ms]
+2026-08-05 21:52:20.568 [info] > git rev-parse --git-dir --git-common-dir --show-superproject-working-tree [51ms]
+2026-08-05 21:52:20.593 [info] [Model][openRepository] Opened repository (path): /Users/nicolesolfest/Photography website
+2026-08-05 21:52:20.593 [info] [Model][openRepository] Opened repository (real path): /Users/nicolesolfest/Photography website
+2026-08-05 21:52:20.593 [info] [Model][openRepository] Opened repository (kind): repository
+2026-08-05 21:52:20.614 [info] > git config --get commit.template [20ms]
+2026-08-05 21:52:20.615 [info] > git config --get --local core.virtualfilesystem [20ms]
+2026-08-05 21:52:20.615 [warning] [Git][config] git config failed: Failed to execute git
+2026-08-05 21:52:20.616 [info] > git rev-parse --show-toplevel [20ms]
+2026-08-05 21:52:21.599 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [1003ms]
+2026-08-05 21:52:21.728 [info] > git check-ignore -v -z --stdin [227ms]
+2026-08-05 21:52:21.729 [info] > git rev-parse --show-toplevel [1064ms]
+2026-08-05 21:52:21.752 [info] > git check-ignore -v -z --stdin [24ms]
+2026-08-05 21:52:21.791 [info] > git rev-parse --show-toplevel [42ms]
+2026-08-05 21:52:21.808 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [49ms]
+2026-08-05 21:52:21.814 [info] > git status -z -uall [56ms]
+2026-08-05 21:52:21.835 [info] > git rev-parse --show-toplevel [42ms]
+2026-08-05 21:52:21.848 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [29ms]
+2026-08-05 21:52:21.849 [info] > git config --get commit.template [25ms]
+2026-08-05 21:52:21.864 [info] > git rev-parse --show-toplevel [26ms]
+2026-08-05 21:52:21.864 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [28ms]
+2026-08-05 21:52:21.870 [info] > git config --get --local branch.main.vscode-merge-base [21ms]
+2026-08-05 21:52:21.888 [info] > git rev-parse --show-toplevel [23ms]
+2026-08-05 21:52:21.891 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [25ms]
+2026-08-05 21:52:21.892 [info] > git status -z -uall [27ms]
+2026-08-05 21:52:21.899 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/SunfestPhotos/main refs/remotes/SunfestPhotos/main [28ms]
+2026-08-05 21:52:21.909 [info] > git rev-parse --show-toplevel [20ms]
+2026-08-05 21:52:21.920 [info] > git merge-base refs/heads/main refs/remotes/solfestne-bug/main [20ms]
+2026-08-05 21:52:21.921 [info] > git merge-base refs/heads/main refs/remotes/solfestne-bug/main [20ms]
+2026-08-05 21:52:21.926 [info] > git rev-parse --show-toplevel [16ms]
+2026-08-05 21:52:21.927 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2026-08-05 21:52:21.945 [info] > git diff --raw --numstat --diff-filter=ADMR -z --find-renames=50% b83d829a7565743f6c6cdbf028a578ee20607300...refs/remotes/solfestne-bug/main -- [24ms]
+2026-08-05 21:52:21.946 [info] > git diff --raw --numstat --diff-filter=ADMR -z --find-renames=50% b83d829a7565743f6c6cdbf028a578ee20607300...refs/remotes/solfestne-bug/main -- [25ms]
+2026-08-05 21:52:21.952 [info] > git show --textconv :Photowebsite.html [24ms]
+2026-08-05 21:52:21.953 [info] > git ls-files --stage -- Photowebsite.html [24ms]
+2026-08-05 21:52:21.955 [info] > git config --get commit.template [24ms]
+2026-08-05 21:52:21.958 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [24ms]
+2026-08-05 21:52:21.979 [info] > git cat-file -s 7d21ce13cebf4abe8fe45adda773508657dbcc50 [26ms]
+2026-08-05 21:52:21.989 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [27ms]
+2026-08-05 21:52:21.996 [info] > git status -z -uall [35ms]
+2026-08-05 21:52:22.063 [info] > git check-ignore -v -z --stdin [59ms]
+2026-08-05 21:52:22.078 [info] > git blame --root --incremental b83d829a7565743f6c6cdbf028a578ee20607300 -- Photowebsite.html [67ms]
+2026-08-05 21:53:41.937 [info] > git merge-base HEAD @{upstream} [15ms]
+2026-08-05 21:53:41.949 [info] > git config --get --local core.virtualfilesystem [11ms]
+2026-08-05 21:53:41.949 [warning] [Git][config] git config failed: Failed to execute git
+2026-08-05 21:53:41.961 [info] > git config --get --local core.sparsecheckout [12ms]
+2026-08-05 21:53:41.961 [warning] [Git][config] git config failed: Failed to execute git
+2026-08-05 21:53:41.977 [info] > git show -s --decorate=full --shortstat --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z b83d829a7565743f6c6cdbf028a578ee20607300 -- [15ms]
+2026-08-05 21:53:41.992 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z b83d829a7565743f6c6cdbf028a578ee20607300..HEAD [14ms]
+2026-08-05 21:53:42.027 [info] > git diff --name-status -z --diff-filter=ADMR b83d829a7565743f6c6cdbf028a578ee20607300 -- [15ms]
+2026-08-05 21:53:43.159 [info] > git config --get commit.template [30ms]
+2026-08-05 21:53:43.162 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [28ms]
+2026-08-05 21:53:43.184 [info] > git status -z -uall [21ms]
+2026-08-05 21:53:43.185 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [21ms]
+2026-08-05 21:53:43.242 [info] > git ls-files --stage -- Photowebsite.html [17ms]
+2026-08-05 21:53:43.258 [info] > git cat-file -s 7d21ce13cebf4abe8fe45adda773508657dbcc50 [15ms]
+2026-08-05 21:53:43.272 [info] > git show --textconv :Photowebsite.html [13ms]
+2026-08-05 21:54:50.612 [info] > git check-ignore -v -z --stdin [27ms]
+2026-08-05 21:54:51.389 [info] > git config --get commit.template [16ms]
+2026-08-05 21:54:51.390 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [16ms]
+2026-08-05 21:54:51.406 [info] > git status -z -uall [15ms]
+2026-08-05 21:54:51.406 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [15ms]
+2026-08-05 21:54:51.740 [info] > git check-ignore -v -z --stdin [28ms]
+2026-08-05 21:54:55.985 [info] > git merge-base HEAD @{upstream} [26ms]
+2026-08-05 21:54:56.005 [info] > git config --get --local core.virtualfilesystem [19ms]
+2026-08-05 21:54:56.005 [warning] [Git][config] git config failed: Failed to execute git
+2026-08-05 21:54:56.020 [info] > git config --get --local core.sparsecheckout [14ms]
+2026-08-05 21:54:56.020 [warning] [Git][config] git config failed: Failed to execute git
+2026-08-05 21:54:56.035 [info] > git show -s --decorate=full --shortstat --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z b83d829a7565743f6c6cdbf028a578ee20607300 -- [14ms]
+2026-08-05 21:54:56.049 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z b83d829a7565743f6c6cdbf028a578ee20607300..HEAD [14ms]
+2026-08-05 21:54:56.063 [info] > git diff --name-status -z --diff-filter=ADMR b83d829a7565743f6c6cdbf028a578ee20607300 -- [13ms]
+2026-08-05 21:54:56.078 [info] > git diff b83d829a7565743f6c6cdbf028a578ee20607300 -- Photowebsite.html [14ms]
+2026-08-05 21:56:41.910 [info] > git merge-base HEAD @{upstream} [13ms]
+2026-08-05 21:56:41.923 [info] > git config --get --local core.virtualfilesystem [12ms]
+2026-08-05 21:56:41.923 [warning] [Git][config] git config failed: Failed to execute git
+2026-08-05 21:56:41.935 [info] > git config --get --local core.sparsecheckout [11ms]
+2026-08-05 21:56:41.935 [warning] [Git][config] git config failed: Failed to execute git
+2026-08-05 21:56:41.949 [info] > git show -s --decorate=full --shortstat --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z b83d829a7565743f6c6cdbf028a578ee20607300 -- [13ms]
+2026-08-05 21:56:41.962 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z b83d829a7565743f6c6cdbf028a578ee20607300..HEAD [13ms]
+2026-08-05 21:56:41.976 [info] > git diff --name-status -z --diff-filter=ADMR b83d829a7565743f6c6cdbf028a578ee20607300 -- [13ms]
+2026-08-05 21:56:41.990 [info] > git diff b83d829a7565743f6c6cdbf028a578ee20607300 -- Photowebsite.html [13ms]
+2026-08-05 21:56:45.400 [info] > git merge-base HEAD @{upstream} [26ms]
+2026-08-05 21:56:45.418 [info] > git config --get --local core.virtualfilesystem [16ms]
+2026-08-05 21:56:45.418 [warning] [Git][config] git config failed: Failed to execute git
+2026-08-05 21:56:45.432 [info] > git config --get --local core.sparsecheckout [13ms]
+2026-08-05 21:56:45.432 [warning] [Git][config] git config failed: Failed to execute git
+2026-08-05 21:56:45.447 [info] > git show -s --decorate=full --shortstat --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z b83d829a7565743f6c6cdbf028a578ee20607300 -- [14ms]
+2026-08-05 21:56:45.461 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z b83d829a7565743f6c6cdbf028a578ee20607300..HEAD [13ms]
+2026-08-05 21:56:45.475 [info] > git diff --name-status -z --diff-filter=ADMR b83d829a7565743f6c6cdbf028a578ee20607300 -- [13ms]
+2026-08-05 21:56:45.489 [info] > git diff b83d829a7565743f6c6cdbf028a578ee20607300 -- Photowebsite.html [13ms]
+2026-08-05 21:57:02.977 [info] > git check-ignore -v -z --stdin [21ms]
+2026-08-05 21:57:04.877 [info] > git check-ignore -v -z --stdin [16ms]
+2026-08-05 21:57:04.892 [info] > git ls-files --stage -- couples-engagement.html [13ms]
+2026-08-05 21:57:04.894 [info] > git show --textconv :couples-engagement.html [16ms]
+2026-08-05 21:57:04.906 [info] > git cat-file -s 2fe1551d20acb35a69dcdb4ade5ecbc0bfe143c0 [13ms]
+2026-08-05 21:57:04.928 [info] > git blame --root --incremental b83d829a7565743f6c6cdbf028a578ee20607300 -- couples-engagement.html [18ms]
+2026-08-05 21:57:09.991 [info] > git check-ignore -v -z --stdin [16ms]
+2026-08-05 21:57:10.006 [info] > git ls-files --stage -- headshots.html [13ms]
+2026-08-05 21:57:10.007 [info] > git show --textconv :headshots.html [15ms]
+2026-08-05 21:57:10.019 [info] > git cat-file -s e511d5c40aac010a3091f95a7a5a68bd97d5893f [12ms]
+2026-08-05 21:57:10.037 [info] > git blame --root --incremental b83d829a7565743f6c6cdbf028a578ee20607300 -- headshots.html [15ms]
+2026-08-05 21:57:12.054 [info] > git ls-files --stage -- Photowebsite.html [24ms]
+2026-08-05 21:57:12.055 [info] > git show --textconv HEAD:Photowebsite.html [27ms]
+2026-08-05 21:57:12.055 [info] > git show --textconv :Photowebsite.html [26ms]
+2026-08-05 21:57:12.056 [info] > git ls-tree -l HEAD -- Photowebsite.html [26ms]
+2026-08-05 21:57:12.072 [info] > git cat-file -s 7d21ce13cebf4abe8fe45adda773508657dbcc50 [17ms]
+2026-08-05 21:57:12.558 [info] > git check-ignore -v -z --stdin [22ms]
+2026-08-05 21:57:29.071 [info] > git add -A -- Photowebsite.html [27ms]
+2026-08-05 21:57:29.089 [info] > git config --get commit.template [15ms]
+2026-08-05 21:57:29.092 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [18ms]
+2026-08-05 21:57:29.108 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [15ms]
+2026-08-05 21:57:29.108 [info] > git status -z -uall [15ms]
+2026-08-05 21:57:30.512 [info] > git config --get commit.template [28ms]
+2026-08-05 21:57:30.514 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [29ms]
+2026-08-05 21:57:30.537 [info] > git status -z -uall [21ms]
+2026-08-05 21:57:30.537 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [21ms]
+2026-08-05 21:57:34.939 [info] > git check-ignore -v -z --stdin [19ms]
+2026-08-05 21:57:36.765 [info] > git -c user.useConfigOnly=true commit --quiet [2749ms]
+2026-08-05 21:57:36.765 [info] Aborting commit due to empty commit message.
+2026-08-05 21:57:36.789 [info] > git config --get commit.template [23ms]
+2026-08-05 21:57:36.791 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [24ms]
+2026-08-05 21:57:36.811 [info] > git status -z -uall [19ms]
+2026-08-05 21:57:36.811 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [18ms]
+2026-08-05 21:57:36.830 [info] > git config --get commit.template [15ms]
+2026-08-05 21:57:36.831 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [16ms]
+2026-08-05 21:57:36.846 [info] > git status -z -uall [14ms]
+2026-08-05 21:57:36.846 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [14ms]
+2026-08-05 21:57:41.883 [info] > git config --get commit.template [30ms]
+2026-08-05 21:57:41.885 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [29ms]
+2026-08-05 21:57:41.910 [info] > git status -z -uall [23ms]
+2026-08-05 21:57:41.910 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [22ms]
+2026-08-05 21:57:48.074 [info] > git -c user.useConfigOnly=true commit --quiet --allow-empty-message --file - [71ms]
+2026-08-05 21:57:48.088 [info] > git config --get commit.template [14ms]
+2026-08-05 21:57:48.102 [info] > git config --get commit.template [13ms]
+2026-08-05 21:57:48.104 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [14ms]
+2026-08-05 21:57:48.118 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [13ms]
+2026-08-05 21:57:48.119 [info] > git status -z -uall [15ms]
+2026-08-05 21:57:48.138 [info] > git merge-base refs/heads/main refs/remotes/solfestne-bug/main [17ms]
+2026-08-05 21:57:48.154 [info] > git diff --raw --numstat --diff-filter=ADMR -z --find-renames=50% b83d829a7565743f6c6cdbf028a578ee20607300...refs/remotes/solfestne-bug/main -- [15ms]
+2026-08-05 21:57:48.599 [info] > git push solfestne-bug main:main [476ms]
+2026-08-05 21:57:48.599 [info] To https://github.com/solfestne-bug/Photography-website.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/solfestne-bug/Photography-website.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+2026-08-05 21:57:48.619 [info] > git config --get commit.template [17ms]
+2026-08-05 21:57:48.620 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [17ms]
+2026-08-05 21:57:48.636 [info] > git status -z -uall [15ms]
+2026-08-05 21:57:48.637 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [15ms]
+2026-08-05 21:57:48.658 [info] > git config --get commit.template [14ms]
+2026-08-05 21:57:48.659 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [15ms]
+2026-08-05 21:57:48.675 [info] > git status -z -uall [15ms]
+2026-08-05 21:57:48.675 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [15ms]
+2026-08-05 21:57:50.354 [info] > git config --get commit.template [33ms]
+2026-08-05 21:57:50.357 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [34ms]
+2026-08-05 21:57:50.379 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [21ms]
+2026-08-05 21:57:50.380 [info] > git status -z -uall [22ms]
+2026-08-05 21:58:31.049 [info] > git merge-base HEAD @{upstream} [14ms]
+2026-08-05 21:58:31.063 [info] > git config --get --local core.virtualfilesystem [13ms]
+2026-08-05 21:58:31.063 [warning] [Git][config] git config failed: Failed to execute git
+2026-08-05 21:58:31.076 [info] > git config --get --local core.sparsecheckout [12ms]
+2026-08-05 21:58:31.076 [warning] [Git][config] git config failed: Failed to execute git
+2026-08-05 21:58:31.093 [info] > git show -s --decorate=full --shortstat --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z b83d829a7565743f6c6cdbf028a578ee20607300 -- [16ms]
+2026-08-05 21:58:31.110 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z b83d829a7565743f6c6cdbf028a578ee20607300..HEAD [16ms]
+2026-08-05 21:58:31.124 [info] > git diff --name-status -z --diff-filter=ADMR b83d829a7565743f6c6cdbf028a578ee20607300 -- [13ms]
+2026-08-05 21:58:31.139 [info] > git diff b83d829a7565743f6c6cdbf028a578ee20607300 -- Photowebsite.html [14ms]
+2026-08-05 21:58:45.461 [info] > git merge-base HEAD @{upstream} [26ms]
+2026-08-05 21:58:45.480 [info] > git config --get --local core.virtualfilesystem [18ms]
+2026-08-05 21:58:45.480 [warning] [Git][config] git config failed: Failed to execute git
+2026-08-05 21:58:45.496 [info] > git config --get --local core.sparsecheckout [15ms]
+2026-08-05 21:58:45.496 [warning] [Git][config] git config failed: Failed to execute git
+2026-08-05 21:58:45.512 [info] > git show -s --decorate=full --shortstat --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z b83d829a7565743f6c6cdbf028a578ee20607300 -- [15ms]
+2026-08-05 21:58:45.527 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z b83d829a7565743f6c6cdbf028a578ee20607300..HEAD [14ms]
+2026-08-05 21:58:45.541 [info] > git diff --name-status -z --diff-filter=ADMR b83d829a7565743f6c6cdbf028a578ee20607300 -- [13ms]
+2026-08-05 21:58:45.556 [info] > git diff b83d829a7565743f6c6cdbf028a578ee20607300 -- Photowebsite.html [14ms]
+2026-08-05 22:01:36.058 [info] > git log --oneline --cherry main...main@{upstream} -- [31ms]
+2026-08-05 22:01:36.443 [info] > git pull --tags solfestne-bug main [384ms]
+2026-08-05 22:01:36.444 [info] From https://github.com/solfestne-bug/Photography-website
+ * branch            main       -> FETCH_HEAD
+   b83d829..4340745  main       -> solfestne-bug/main
+hint: You have divergent branches and need to specify how to reconcile them.
+hint: You can do so by running one of the following commands sometime before
+hint: your next pull:
+hint:
+hint:   git config pull.rebase false  # merge
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint:
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+fatal: Need to specify how to reconcile divergent branches.
+2026-08-05 22:01:36.461 [info] > git config --get commit.template [16ms]
+2026-08-05 22:01:36.463 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [17ms]
+2026-08-05 22:01:36.480 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [16ms]
+2026-08-05 22:01:36.480 [info] > git status -z -uall [17ms]
+2026-08-05 22:01:36.498 [info] > git merge-base refs/heads/main refs/remotes/solfestne-bug/main [16ms]
+2026-08-05 22:01:36.515 [info] > git diff --raw --numstat --diff-filter=ADMR -z --find-renames=50% b83d829a7565743f6c6cdbf028a578ee20607300...refs/remotes/solfestne-bug/main -- [16ms]
+2026-08-05 22:01:37.611 [info] > git config --get commit.template [30ms]
+2026-08-05 22:01:37.614 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [31ms]
+2026-08-05 22:01:37.639 [info] > git status -z -uall [23ms]
+2026-08-05 22:01:37.640 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [23ms]
+2026-08-05 22:01:42.672 [info] > git config --get commit.template [28ms]
+2026-08-05 22:01:42.675 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [30ms]
+2026-08-05 22:01:42.700 [info] > git status -z -uall [23ms]
+2026-08-05 22:01:42.700 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [22ms]
+2026-08-05 22:02:11.642 [info] > git log --oneline --cherry main...main@{upstream} -- [32ms]
+2026-08-05 22:02:11.935 [info] > git pull --tags solfestne-bug main [292ms]
+2026-08-05 22:02:11.935 [info] From https://github.com/solfestne-bug/Photography-website
+ * branch            main       -> FETCH_HEAD
+hint: You have divergent branches and need to specify how to reconcile them.
+hint: You can do so by running one of the following commands sometime before
+hint: your next pull:
+hint:
+hint:   git config pull.rebase false  # merge
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint:
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+fatal: Need to specify how to reconcile divergent branches.
+2026-08-05 22:02:11.955 [info] > git config --get commit.template [19ms]
+2026-08-05 22:02:11.957 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [20ms]
+2026-08-05 22:02:11.975 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [16ms]
+2026-08-05 22:02:11.975 [info] > git status -z -uall [17ms]
+2026-08-05 22:02:13.111 [info] > git config --get commit.template [29ms]
+2026-08-05 22:02:13.115 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [32ms]
+2026-08-05 22:02:13.139 [info] > git status -z -uall [23ms]
+2026-08-05 22:02:13.140 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [23ms]
+2026-08-05 22:02:18.175 [info] > git config --get commit.template [29ms]
+2026-08-05 22:02:18.178 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [30ms]
+2026-08-05 22:02:18.231 [info] > git status -z -uall [51ms]
+2026-08-05 22:02:18.233 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [53ms]
+2026-08-05 22:02:20.122 [info] > git log --oneline --cherry main...main@{upstream} -- [25ms]
+2026-08-05 22:02:20.584 [info] > git pull --tags solfestne-bug main [461ms]
+2026-08-05 22:02:20.584 [info] From https://github.com/solfestne-bug/Photography-website
+ * branch            main       -> FETCH_HEAD
+hint: You have divergent branches and need to specify how to reconcile them.
+hint: You can do so by running one of the following commands sometime before
+hint: your next pull:
+hint:
+hint:   git config pull.rebase false  # merge
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint:
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+fatal: Need to specify how to reconcile divergent branches.
+2026-08-05 22:02:20.605 [info] > git config --get commit.template [20ms]
+2026-08-05 22:02:20.607 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [21ms]
+2026-08-05 22:02:20.626 [info] > git status -z -uall [18ms]
+2026-08-05 22:02:20.627 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [18ms]
+2026-08-05 22:02:23.271 [info] > git config --get commit.template [32ms]
+2026-08-05 22:02:23.274 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [33ms]
+2026-08-05 22:02:23.297 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [21ms]
+2026-08-05 22:02:23.297 [info] > git status -z -uall [22ms]
+2026-08-05 22:05:47.403 [info] > git check-ignore -v -z --stdin [14ms]
+2026-08-05 22:05:47.417 [info] > git ls-files --stage -- index.html [12ms]
+2026-08-05 22:05:47.418 [info] > git show --textconv :index.html [13ms]
+2026-08-05 22:05:47.429 [info] > git cat-file -s d56ea88e3d05051a307e03451869f98ad01bf902 [11ms]
+2026-08-05 22:05:47.455 [info] > git blame --root --incremental c30b55ccb969f4d881ce75974625bccb45330c71 -- index.html [17ms]
+2026-08-05 22:06:06.092 [info] > git log --oneline --cherry main...main@{upstream} -- [33ms]
+2026-08-05 22:06:06.431 [info] > git pull --tags solfestne-bug main [337ms]
+2026-08-05 22:06:06.431 [info] From https://github.com/solfestne-bug/Photography-website
+ * branch            main       -> FETCH_HEAD
+hint: You have divergent branches and need to specify how to reconcile them.
+hint: You can do so by running one of the following commands sometime before
+hint: your next pull:
+hint:
+hint:   git config pull.rebase false  # merge
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint:
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+fatal: Need to specify how to reconcile divergent branches.
+2026-08-05 22:06:06.450 [info] > git config --get commit.template [18ms]
+2026-08-05 22:06:06.452 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [20ms]
+2026-08-05 22:06:06.468 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [15ms]
+2026-08-05 22:06:06.469 [info] > git status -z -uall [17ms]
+2026-08-05 22:06:07.542 [info] > git config --get commit.template [32ms]
+2026-08-05 22:06:07.544 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [32ms]
+2026-08-05 22:06:07.567 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [20ms]
+2026-08-05 22:06:07.568 [info] > git status -z -uall [22ms]
+2026-08-05 22:06:07.625 [info] > git ls-files --stage -- index.html [17ms]
+2026-08-05 22:06:07.640 [info] > git cat-file -s d56ea88e3d05051a307e03451869f98ad01bf902 [14ms]
+2026-08-05 22:06:07.654 [info] > git show --textconv :index.html [13ms]
+2026-08-05 22:09:23.870 [info] > git merge-base HEAD @{upstream} [14ms]
+2026-08-05 22:09:23.884 [info] > git config --get --local core.virtualfilesystem [13ms]
+2026-08-05 22:09:23.884 [warning] [Git][config] git config failed: Failed to execute git
+2026-08-05 22:09:23.898 [info] > git config --get --local core.sparsecheckout [14ms]
+2026-08-05 22:09:23.899 [warning] [Git][config] git config failed: Failed to execute git
+2026-08-05 22:09:23.914 [info] > git show -s --decorate=full --shortstat --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z b83d829a7565743f6c6cdbf028a578ee20607300 -- [15ms]
+2026-08-05 22:09:23.929 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z b83d829a7565743f6c6cdbf028a578ee20607300..HEAD [14ms]
+2026-08-05 22:09:23.944 [info] > git diff --name-status -z --diff-filter=ADMR b83d829a7565743f6c6cdbf028a578ee20607300 -- [14ms]
+2026-08-05 22:09:23.959 [info] > git diff b83d829a7565743f6c6cdbf028a578ee20607300 -- Photowebsite.html [14ms]
+2026-08-05 22:10:05.212 [info] > git config --get commit.template [13ms]
+2026-08-05 22:10:05.214 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [14ms]
+2026-08-05 22:10:05.272 [info] > git status -z -uall [57ms]
+2026-08-05 22:10:05.273 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [57ms]
+2026-08-05 22:10:07.893 [info] > git merge-base HEAD @{upstream} [19ms]
+2026-08-05 22:10:07.910 [info] > git config --get --local core.virtualfilesystem [16ms]
+2026-08-05 22:10:07.910 [warning] [Git][config] git config failed: Failed to execute git
+2026-08-05 22:10:07.924 [info] > git config --get --local core.sparsecheckout [14ms]
+2026-08-05 22:10:07.924 [warning] [Git][config] git config failed: Failed to execute git
+2026-08-05 22:10:07.939 [info] > git show -s --decorate=full --shortstat --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z b83d829a7565743f6c6cdbf028a578ee20607300 -- [14ms]
+2026-08-05 22:10:07.959 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z b83d829a7565743f6c6cdbf028a578ee20607300..HEAD [19ms]
+2026-08-05 22:10:07.981 [info] > git diff --name-status -z --diff-filter=ADMR b83d829a7565743f6c6cdbf028a578ee20607300 -- [21ms]
+2026-08-05 22:10:07.998 [info] > git diff b83d829a7565743f6c6cdbf028a578ee20607300 -- Photowebsite.html [16ms]
+2026-08-05 22:10:08.012 [info] > git diff b83d829a7565743f6c6cdbf028a578ee20607300 -- brands.html [13ms]
+2026-08-05 22:10:08.027 [info] > git diff b83d829a7565743f6c6cdbf028a578ee20607300 -- couples-engagement.html [14ms]
+2026-08-05 22:10:08.043 [info] > git diff b83d829a7565743f6c6cdbf028a578ee20607300 -- gallery.html [15ms]
+2026-08-05 22:10:08.092 [info] > git diff b83d829a7565743f6c6cdbf028a578ee20607300 -- headshots.html [48ms]
+2026-08-05 22:10:08.108 [info] > git diff b83d829a7565743f6c6cdbf028a578ee20607300 -- index.html [15ms]
+2026-08-05 22:10:08.123 [info] > git diff b83d829a7565743f6c6cdbf028a578ee20607300 -- instagram-shoots.html [14ms]
+2026-08-05 22:10:08.137 [info] > git diff b83d829a7565743f6c6cdbf028a578ee20607300 -- kids.html [14ms]
+2026-08-05 22:10:08.152 [info] > git diff b83d829a7565743f6c6cdbf028a578ee20607300 -- pet-photos.html [14ms]
+2026-08-05 22:10:08.167 [info] > git diff b83d829a7565743f6c6cdbf028a578ee20607300 -- pricing.html [14ms]
+2026-08-05 22:10:08.181 [info] > git diff b83d829a7565743f6c6cdbf028a578ee20607300 -- senior-photos.html [13ms]
+2026-08-05 22:10:53.586 [info] > git merge-base HEAD @{upstream} [14ms]
+2026-08-05 22:10:53.599 [info] > git config --get --local core.virtualfilesystem [12ms]
+2026-08-05 22:10:53.599 [warning] [Git][config] git config failed: Failed to execute git
+2026-08-05 22:10:53.612 [info] > git config --get --local core.sparsecheckout [12ms]
+2026-08-05 22:10:53.612 [warning] [Git][config] git config failed: Failed to execute git
+2026-08-05 22:10:53.629 [info] > git show -s --decorate=full --shortstat --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z b83d829a7565743f6c6cdbf028a578ee20607300 -- [15ms]
+2026-08-05 22:10:53.644 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z b83d829a7565743f6c6cdbf028a578ee20607300..HEAD [15ms]
+2026-08-05 22:10:53.660 [info] > git diff --name-status -z --diff-filter=ADMR b83d829a7565743f6c6cdbf028a578ee20607300 -- [15ms]
+2026-08-05 22:10:53.675 [info] > git diff b83d829a7565743f6c6cdbf028a578ee20607300 -- Photowebsite.html [14ms]
+2026-08-05 22:10:53.690 [info] > git diff b83d829a7565743f6c6cdbf028a578ee20607300 -- brands.html [14ms]
+2026-08-05 22:10:53.705 [info] > git diff b83d829a7565743f6c6cdbf028a578ee20607300 -- couples-engagement.html [15ms]
+2026-08-05 22:10:53.720 [info] > git diff b83d829a7565743f6c6cdbf028a578ee20607300 -- gallery.html [14ms]
+2026-08-05 22:10:53.735 [info] > git diff b83d829a7565743f6c6cdbf028a578ee20607300 -- headshots.html [14ms]
+2026-08-05 22:10:53.749 [info] > git diff b83d829a7565743f6c6cdbf028a578ee20607300 -- index.html [13ms]
+2026-08-05 22:10:53.763 [info] > git diff b83d829a7565743f6c6cdbf028a578ee20607300 -- instagram-shoots.html [13ms]
+2026-08-05 22:10:53.778 [info] > git diff b83d829a7565743f6c6cdbf028a578ee20607300 -- kids.html [14ms]
+2026-08-05 22:10:53.793 [info] > git diff b83d829a7565743f6c6cdbf028a578ee20607300 -- pet-photos.html [14ms]
+2026-08-05 22:10:53.807 [info] > git diff b83d829a7565743f6c6cdbf028a578ee20607300 -- pricing.html [14ms]
+2026-08-05 22:10:53.822 [info] > git diff b83d829a7565743f6c6cdbf028a578ee20607300 -- senior-photos.html [14ms]
+2026-08-05 22:11:26.277 [info] > git config --get commit.template [30ms]
+2026-08-05 22:11:26.280 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [31ms]
+2026-08-05 22:11:26.305 [info] > git status -z -uall [23ms]
+2026-08-05 22:11:26.306 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [23ms]
+2026-08-05 22:11:26.806 [info] > git merge-base HEAD @{upstream} [18ms]
+2026-08-05 22:11:26.857 [info] > git config --get --local core.virtualfilesystem [50ms]
+2026-08-05 22:11:26.858 [warning] [Git][config] git config failed: Failed to execute git
+2026-08-05 22:11:26.872 [info] > git config --get --local core.sparsecheckout [14ms]
+2026-08-05 22:11:26.872 [warning] [Git][config] git config failed: Failed to execute git
+2026-08-05 22:11:26.888 [info] > git show -s --decorate=full --shortstat --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z b83d829a7565743f6c6cdbf028a578ee20607300 -- [15ms]
+2026-08-05 22:11:26.903 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z b83d829a7565743f6c6cdbf028a578ee20607300..HEAD [15ms]
+2026-08-05 22:11:26.919 [info] > git diff --name-status -z --diff-filter=ADMR b83d829a7565743f6c6cdbf028a578ee20607300 -- [15ms]
+2026-08-05 22:11:26.934 [info] > git diff b83d829a7565743f6c6cdbf028a578ee20607300 -- Photowebsite.html [14ms]
+2026-08-05 22:11:26.948 [info] > git diff b83d829a7565743f6c6cdbf028a578ee20607300 -- README.md [13ms]
+2026-08-05 22:11:26.963 [info] > git diff b83d829a7565743f6c6cdbf028a578ee20607300 -- brands.html [14ms]
+2026-08-05 22:11:26.978 [info] > git diff b83d829a7565743f6c6cdbf028a578ee20607300 -- couples-engagement.html [14ms]
+2026-08-05 22:11:26.992 [info] > git diff b83d829a7565743f6c6cdbf028a578ee20607300 -- gallery.html [13ms]
+2026-08-05 22:11:27.007 [info] > git diff b83d829a7565743f6c6cdbf028a578ee20607300 -- headshots.html [14ms]
+2026-08-05 22:11:27.022 [info] > git diff b83d829a7565743f6c6cdbf028a578ee20607300 -- index.html [14ms]
+2026-08-05 22:11:27.040 [info] > git diff b83d829a7565743f6c6cdbf028a578ee20607300 -- instagram-shoots.html [17ms]
+2026-08-05 22:11:27.059 [info] > git diff b83d829a7565743f6c6cdbf028a578ee20607300 -- kids.html [18ms]
+2026-08-05 22:11:27.078 [info] > git diff b83d829a7565743f6c6cdbf028a578ee20607300 -- pet-photos.html [19ms]
+2026-08-05 22:11:27.094 [info] > git diff b83d829a7565743f6c6cdbf028a578ee20607300 -- pricing.html [15ms]
+2026-08-05 22:11:27.110 [info] > git diff b83d829a7565743f6c6cdbf028a578ee20607300 -- senior-photos.html [16ms]
+2026-08-05 22:11:38.803 [info] > git config --get commit.template [28ms]
+2026-08-05 22:11:38.805 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) --ignore-case refs/heads/main refs/remotes/main [29ms]
+2026-08-05 22:11:38.828 [info] > git status -z -uall [22ms]
+2026-08-05 22:11:38.829 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [22ms]

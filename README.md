@@ -4,13 +4,13 @@ A simple, responsive static website for a photography business.
 
 ## Files
 
-- `index.html` — homepage with hero, portfolio, services, about, and contact sections
+- `Photowebsite.html` — homepage with hero, portfolio, services, about, and contact sections
 - `styles.css` — modern dark-theme styling optimized for photography portfolios
 - `script.js` — smooth scrolling for anchor links
 
 ## Getting Started
 
-Open `index.html` in a browser to preview the site.
+Open `Photowebsite.html` in a browser to preview the site.
 
 ## Customize
 
